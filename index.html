@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odontología Smile</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <header class="cont">
+        <div class="contenedor">
+            <img class="logo" src="media/LOGO.png" alt="Smile">
+        </div>
+
+        <nav class="menu">
+            <ul class="links-lista">
+                <li><a class="lista" href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a class="lista" href="#tratamientos">Tratamientos</a></li>
+                <li><a class="lista" href="#contacto">Contacto</a></li>
+                <li><a class="lista" href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bienvenida" id="quienes-somos">
+            <h2 class="titulo-seccion">¿Quiénes somos?</h2>
+            <video class="videopresentacion" width="100%" height="600px" poster="media/video/video2.gif" autoplay muted loop>
+                <source src="media/video/video2.gif" type="video/mp4">
+                <track src="media/video/subs-es.vtt" srclang="es" label="Español" default>
+            </video>
+        </section>
+
+
+        <section class="tratamientos" id="tratamientos">
+            <h2 class="titulo-tratamientos">Tratamientos</h2>
+            <div class="div-container">   
+                <div class="titulo1">
+                    <h3>Odontología general</h3>
+                    <img class="fondo1" src="media/fonto1.png" alt="imagen del tratamiento1">
+                    <p class="datos1">Limpieza / Operatoria</p>
+                    <button class="boton">Solicitar turno</button>
+                </div>
+                    
+                <div class="titulo1"> 
+                    <h3>Implantes</h3>
+                    <img class="fondo1" src="media/fondo2.png" alt="imagen del tratamiento2">
+                    <button class="boton">Solicitar turno</button>
+                </div>
+                
+                <div class="titulo1">
+                    <h3>Prótesis</h3>
+                    <img class="fondo1" src="media/fondo5.png" alt="imagen del tratamiento3">
+                    <button class="boton">Solicitar turno</button>
+                </div>
+
+                <div class="titulo1"> 
+                    <h3>Estética dental</h3>
+                    <img class="fondo1" src="media/fondo3.png" alt="imagen del tratamiento4">
+                    <p class="datos1">Blanqueamiento / Piercing</p>
+                    <button class="boton">Solicitar turno</button>
+                </div>
+
+                <div class="titulo1">
+                    <h3>Endodoncia</h3>
+                    <img class="fondo1" src="media/fondo4.png" alt="imagen del tratamiento5">
+                    <p class="datos1">Tratamiento de conducto</p>         
+                    <button class="boton">Solicitar turno</button>
+                </div>
+
+                <div class="titulo1">
+                    <h3>Periodoncia</h3>
+                    <img class="fondo1" src="media/fondo6.png" alt="imagen del tratamiento6">
+                    <p>Cirugía periodontal / Limpieza</p>
+                    <button class="boton">Solicitar turno</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <h2 class="titulo-contacto">Contacto</h2>
+            <p class="sub-titulo-contacto">¿Necesitás una consulta o querés pedir un turno?</p>
+            <p class="sub-titulo-contacto">Completá el formulario y recibí atención personalizada. ¡Estamos para cuidar tu sonrisa!</p>
+
+            <form class="formulario" id="ID_form" >
+                <legend>Inicie seción para solicitar un turno</legend><br>
+
+                <div id="empty_email_error"></div>
+                <div id="empty_psw_error"></div>
+                <div id="login_error_error"></div>
+
+                <input  id="ID_email" type="email" placeholder="Ingrese su email"> <br>
+                <input id="ID_pass" type="password" name="contraseña" placeholder="Ingrese su contraseña"><br>
+                <button class="boton2" id="IDb_oton" >Ingresar</button>
+            </form>
+
+        </section>
+
+        <section class="contenedor-ubicacion" id="ubicacion">
+            <h2 class="Ubicacion">Ubicación</h2>
+            <p class="titulo-ubicacion">
+                Av. Maipú 2417, Olivos, Buenos Aires. <br> 
+                Nos encontramos en el 1er piso, ¡tocar timbre!
+            </p>
+
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.607589457266!2d-58.49191472494884!3d-34.51283135270285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13edb3f4a59%3A0xc7c45cc92e1d13e4!2sAv.%20Maip%C3%BA%202417%2C%20B1636AAE%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1761090590724!5m2!1ses!2sar" width="500" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer class="seccion-footer">
+            <div class="container-footer">
+                <button class="boton-volver" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Volver a inicio</button>
+                <div class="seccion-iconos">
+                    <p>Seguinos en:</p> 
+                    <a href="https://wwww.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/odontologa.silviaayala/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="footer-copy">©️ Copyright 2025 | Todos los derechos reservados</p>
+        </footer>
+    </main>
+
+<script> src="index.js"</script>
+</body>
+</html>
